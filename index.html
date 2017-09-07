@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogger</title>
+    <script src="Blog.js"></script>
+    <script src="listBlogs.js"></script>
+    <script src="createBlog.js"></script>
+    <link href="blog.css" rel="stylesheet">
+    <script>
+        window.addEventListener("load", blogHandler.view.listBlogs.setUpUserInterface);
+    </script>
+</head>
+<body>
+<header class="mainHeader">
+    <h2>My Blogs</h2>
+    <nav>
+        <ul>
+            <li class="active"><a href="/SalesForce_Blogger/index.html">View Blogs</a></li>
+            <li><a href="/SalesForce_Blogger/createBlog.html">Create Blog</a></li>
+            <li><a href="/SalesForce_Blogger/updateBlog.html">Update Blog</a></li>
+            <li><a href="/SalesForce_Blogger/deleteBlog.html">Delete Blog</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="nav">
+    Past Posts
+    <div id="nav">
+
+    </div>
+</div>
+<div class="main">
+    <div id="blogs">
+    </div>
+</div>
+
+</body>
+</html>

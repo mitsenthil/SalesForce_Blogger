@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Blog</title>
+    <script src="Blog.js"></script>
+    <script src="listBlogs.js"></script>
+    <script src="createBlog.js"></script>
+    <link href="blog.css" rel="stylesheet">
+    <script>
+        window.addEventListener("load", blogHandler.view.createBlog.setUpUserInterface);
+    </script>
+</head>
+<body>
+<header class="mainHeader">
+    <h2>My Blogs</h2>
+    <nav>
+        <ul>
+            <li><a href="/SalesForce_Blogger/index.html">View Blogs</a></li>
+            <li class="active"><a href="/SalesForce_Blogger/createBlog.html">Create Blog</a></li>
+            <li><a href="/SalesForce_Blogger/updateBlog.html">Update Blog</a></li>
+            <li><a href="/SalesForce_Blogger/deleteBlog.html">Delete Blog</a></li>
+
+        </ul>
+    </nav>
+</header>
+<h1>Create Blog</h1>
+<form method="post" id="Blog">
+    <p><label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="Title">
+    </p>
+    <p>
+        <label style="vertical-align: top" for="content">Text:</label>
+        <textarea cols="50" rows="20" type="text" id="content" name="content" placeholder="Content"></textarea>
+    </p>
+    <p><input type="submit" name="commit" value="Save"></p>
+</form>
+
+
+</body>
+</html>
